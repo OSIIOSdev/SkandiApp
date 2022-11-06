@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SkandiApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainBackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="B39-72-jWl">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="516"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="516" id="8Qy-5A-CIn"/>
+                                    <constraint firstAttribute="width" constant="390" id="PZL-ph-IdC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3D-Dg-ip1">
+                                <rect key="frame" x="25" y="541" width="340" height="60"/>
+                                <string key="text">Enjoy your Online
+Shopping.</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.24301475260127114" green="0.36365609217171713" blue="0.072167794660900009" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="highlightedColor" red="0.18274109423479293" green="0.27262863005050508" blue="0.056895365381124212" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brows throw all categories and shop the best furniture for your dream house.  " textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7M-Kb-aSd">
+                                <rect key="frame" x="25" y="611" width="340" height="33.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <color key="textColor" red="0.21786029331828818" green="0.32601404671717171" blue="0.064697705569976283" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="highlightedColor" red="0.18274109420000001" green="0.27262863009999999" blue="0.05689536538" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAA-7y-z0g">
+                                <rect key="frame" x="20" y="725" width="350" height="50"/>
+                                <color key="backgroundColor" red="0.18274109420000001" green="0.27262863009999999" blue="0.05689536538" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2FR-4H-vk6"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Get Started">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="K7M-Kb-aSd" firstAttribute="top" secondItem="o3D-Dg-ip1" secondAttribute="bottom" constant="10" id="1lc-Ct-s0z"/>
+                            <constraint firstItem="KAA-7y-z0g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5XR-Oz-e4X"/>
+                            <constraint firstItem="B39-72-jWl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="66R-t6-QI6"/>
+                            <constraint firstItem="K7M-Kb-aSd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="7Zf-X8-Kvj"/>
+                            <constraint firstItem="o3D-Dg-ip1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="KNL-aK-BmP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KAA-7y-z0g" secondAttribute="bottom" constant="35" id="KZQ-rN-htX"/>
+                            <constraint firstItem="o3D-Dg-ip1" firstAttribute="top" secondItem="B39-72-jWl" secondAttribute="bottom" constant="25" id="VE8-BU-nr2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KAA-7y-z0g" secondAttribute="trailing" constant="20" id="Y3t-OY-lXv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K7M-Kb-aSd" secondAttribute="trailing" constant="25" id="ejh-h6-k0h"/>
+                            <constraint firstItem="B39-72-jWl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="h8K-kn-KCq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o3D-Dg-ip1" secondAttribute="trailing" constant="25" id="oM4-jn-bsV"/>
+                            <constraint firstItem="B39-72-jWl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wbS-Gr-8Cj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="getStartedButtonPressed" destination="KAA-7y-z0g" id="UjZ-Qx-j41"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="47.692307692307693" y="-2.1327014218009479"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mainBackgroundImage" width="1279" height="1715"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
