@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5939FF2F29178EEB00EC7410 /* DesignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939FF2E29178EEB00EC7410 /* DesignViewController.swift */; };
+		5939FF3129179F7A00EC7410 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939FF3029179F7A00EC7410 /* FavoriteViewController.swift */; };
+		5939FF332917A21C00EC7410 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939FF322917A21C00EC7410 /* ScanViewController.swift */; };
+		5939FF352917A24E00EC7410 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939FF342917A24E00EC7410 /* CartViewController.swift */; };
+		5939FF372917A27400EC7410 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939FF362917A27400EC7410 /* ProfileViewController.swift */; };
 		59CE5EF729106496008304B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CE5EF629106496008304B4 /* AppDelegate.swift */; };
 		59CE5EF929106496008304B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CE5EF829106496008304B4 /* SceneDelegate.swift */; };
 		59CE5EFB29106496008304B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CE5EFA29106496008304B4 /* ViewController.swift */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5939FF2E29178EEB00EC7410 /* DesignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignViewController.swift; sourceTree = "<group>"; };
+		5939FF3029179F7A00EC7410 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		5939FF322917A21C00EC7410 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		5939FF342917A24E00EC7410 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		5939FF362917A27400EC7410 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		59CE5EF329106496008304B4 /* SkandiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkandiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59CE5EF629106496008304B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59CE5EF829106496008304B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +89,11 @@
 			isa = PBXGroup;
 			children = (
 				59CE5EFA29106496008304B4 /* ViewController.swift */,
+				5939FF2E29178EEB00EC7410 /* DesignViewController.swift */,
+				5939FF3029179F7A00EC7410 /* FavoriteViewController.swift */,
+				5939FF322917A21C00EC7410 /* ScanViewController.swift */,
+				5939FF342917A24E00EC7410 /* CartViewController.swift */,
+				5939FF362917A27400EC7410 /* ProfileViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -164,7 +179,12 @@
 			files = (
 				59CE5EFB29106496008304B4 /* ViewController.swift in Sources */,
 				59CE5EF729106496008304B4 /* AppDelegate.swift in Sources */,
+				5939FF352917A24E00EC7410 /* CartViewController.swift in Sources */,
 				59CE5EF929106496008304B4 /* SceneDelegate.swift in Sources */,
+				5939FF2F29178EEB00EC7410 /* DesignViewController.swift in Sources */,
+				5939FF3129179F7A00EC7410 /* FavoriteViewController.swift in Sources */,
+				5939FF372917A27400EC7410 /* ProfileViewController.swift in Sources */,
+				5939FF332917A21C00EC7410 /* ScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

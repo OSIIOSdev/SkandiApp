@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,36 +13,31 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SkandiApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainBackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="B39-72-jWl">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="516"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="516" id="8Qy-5A-CIn"/>
-                                    <constraint firstAttribute="width" constant="390" id="PZL-ph-IdC"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="560"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3D-Dg-ip1">
-                                <rect key="frame" x="25" y="541" width="340" height="60"/>
+                                <rect key="frame" x="25" y="585" width="340" height="60"/>
                                 <string key="text">Enjoy your Online
 Shopping.</string>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <color key="textColor" red="0.24301475260127114" green="0.36365609217171713" blue="0.072167794660900009" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="highlightedColor" red="0.18274109423479293" green="0.27262863005050508" blue="0.056895365381124212" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.33805239693668365" green="0.39523057897474756" blue="0.33458021535103244" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="highlightedColor" red="0.27843138579999999" green="0.32549020649999999" blue="0.27450981740000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brows throw all categories and shop the best furniture for your dream house.  " textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7M-Kb-aSd">
-                                <rect key="frame" x="25" y="611" width="340" height="33.666666666666629"/>
+                                <rect key="frame" x="25" y="655" width="340" height="33.666666666666629"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
-                                <color key="textColor" red="0.21786029331828818" green="0.32601404671717171" blue="0.064697705569976283" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.37534481972027817" green="0.43883064210606071" blue="0.3714896026500486" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="highlightedColor" red="0.18274109420000001" green="0.27262863009999999" blue="0.05689536538" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAA-7y-z0g">
                                 <rect key="frame" x="20" y="725" width="350" height="50"/>
-                                <color key="backgroundColor" red="0.18274109420000001" green="0.27262863009999999" blue="0.05689536538" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.3388773058615846" green="0.40218592176666668" blue="0.33860696953098229" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="2FR-4H-vk6"/>
                                 </constraints>
@@ -56,19 +52,23 @@ Shopping.</string>
                                     </attributedString>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="XSM-Ue-TFp" kind="presentation" modalPresentationStyle="fullScreen" id="hMP-5r-So4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="K7M-Kb-aSd" firstAttribute="top" secondItem="o3D-Dg-ip1" secondAttribute="bottom" constant="10" id="1lc-Ct-s0z"/>
                             <constraint firstItem="KAA-7y-z0g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5XR-Oz-e4X"/>
                             <constraint firstItem="B39-72-jWl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="66R-t6-QI6"/>
                             <constraint firstItem="K7M-Kb-aSd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="7Zf-X8-Kvj"/>
+                            <constraint firstItem="o3D-Dg-ip1" firstAttribute="top" secondItem="B39-72-jWl" secondAttribute="bottom" constant="25" id="IQQ-9d-cfp"/>
                             <constraint firstItem="o3D-Dg-ip1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="KNL-aK-BmP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KAA-7y-z0g" secondAttribute="bottom" constant="35" id="KZQ-rN-htX"/>
-                            <constraint firstItem="o3D-Dg-ip1" firstAttribute="top" secondItem="B39-72-jWl" secondAttribute="bottom" constant="25" id="VE8-BU-nr2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KAA-7y-z0g" secondAttribute="trailing" constant="20" id="Y3t-OY-lXv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="B39-72-jWl" secondAttribute="bottom" constant="250" id="Z3b-Ic-goC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K7M-Kb-aSd" secondAttribute="trailing" constant="25" id="ejh-h6-k0h"/>
                             <constraint firstItem="B39-72-jWl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="h8K-kn-KCq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o3D-Dg-ip1" secondAttribute="trailing" constant="25" id="oM4-jn-bsV"/>
@@ -79,14 +79,352 @@ Shopping.</string>
                         <outlet property="getStartedButtonPressed" destination="KAA-7y-z0g" id="UjZ-Qx-j41"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="47.692307692307693" y="-2.1327014218009479"/>
+            <point key="canvasLocation" x="27.69230769230769" y="-2.1327014218009479"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="mXM-v3-1Se">
+            <objects>
+                <viewController id="trU-ct-TEm" customClass="DesignViewController" customModule="SkandiApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qW7-pU-m0y">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="7a5-ZO-i9R"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="wEt-ek-hw0">
+                        <imageReference key="image" image="house" catalog="system" symbolScale="large" variableValue="0.80000000000000004"/>
+                        <color key="badgeColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="selectedImage" image="house.fill" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="19J-JQ-80j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="774" y="733"/>
+        </scene>
+        <!--Scan-->
+        <scene sceneID="6L9-Ud-WRv">
+            <objects>
+                <viewController id="VKg-TF-1Fl" customClass="ScanViewController" customModule="SkandiApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sWG-7P-imF">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Furniture scaner" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uo5-g4-0By">
+                                <rect key="frame" x="25" y="62" width="340" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HqE-uU-XkM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.3380523969" green="0.39523057900000003" blue="0.33458021539999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="highlightedColor" red="0.27843138579999999" green="0.32549020649999999" blue="0.27450981740000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="roomExample" translatesAutoresizingMaskIntoConstraints="NO" id="f5Y-XL-NZL">
+                                <rect key="frame" x="0.0" y="107" width="390" height="454"/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7ss-s9-n3A">
+                                <rect key="frame" x="25" y="576" width="340" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="aEB-fx-dse"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Room"/>
+                                    <segment title="Kitchen"/>
+                                    <segment title="Bathroom"/>
+                                    <segment title="Other"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="selectedSegmentTintColor" red="0.33725491169999999" green="0.40000003579999999" blue="0.33725491169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </segmentedControl>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4hh-lh-45U">
+                                <rect key="frame" x="25" y="619.33333333333337" width="340" height="126.66666666666663"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kEJ-f6-eq2">
+                                        <rect key="frame" x="0.0" y="0.0" width="103.33333333333333" height="126.66666666666667"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skandiChair" translatesAutoresizingMaskIntoConstraints="NO" id="qBq-Uu-vH2">
+                                                <rect key="frame" x="11.666666666666664" y="0.0" width="80" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="qBq-Uu-vH2" secondAttribute="height" multiplier="1:1" id="s1R-Je-3ik"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="kez-AL-kuz">
+                                                <rect key="frame" x="14.333333333333336" y="88" width="75" height="38.666666666666657"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SkandiChair" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3l-Hq-F1o">
+                                                        <rect key="frame" x="0.0" y="0.0" width="75" height="14.333333333333334"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some skandi chair description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jyx-hw-23U">
+                                                        <rect key="frame" x="0.0" y="19.333333333333258" width="75" height="19.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XtB-75-LNA">
+                                        <rect key="frame" x="118.33333333333334" y="0.0" width="103.33333333333334" height="126.66666666666667"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skandiChair" translatesAutoresizingMaskIntoConstraints="NO" id="Q4r-wc-hQf">
+                                                <rect key="frame" x="11.666666666666657" y="0.0" width="80" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Q4r-wc-hQf" secondAttribute="height" multiplier="1:1" id="29f-AE-HyH"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4fG-PK-X0Q">
+                                                <rect key="frame" x="14.333333333333314" y="88" width="75" height="38.666666666666657"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SkandiChair" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3e-Gm-dqc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="75" height="14.333333333333334"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some skandi chair description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOU-Ij-dnQ">
+                                                        <rect key="frame" x="0.0" y="19.333333333333258" width="75" height="19.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hYX-2g-0HE">
+                                        <rect key="frame" x="236.66666666666671" y="0.0" width="103.33333333333334" height="126.66666666666667"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skandiChair" translatesAutoresizingMaskIntoConstraints="NO" id="uMi-BA-oBb">
+                                                <rect key="frame" x="11.666666666666629" y="0.0" width="80" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="uMi-BA-oBb" secondAttribute="height" multiplier="1:1" id="4H6-Pu-GpM"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="lj9-us-aDS">
+                                                <rect key="frame" x="14.333333333333314" y="88" width="75" height="38.666666666666657"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SkandiChair" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wz8-Ik-HTp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="75" height="14.333333333333334"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some skandi chair description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2i-YB-k8w">
+                                                        <rect key="frame" x="0.0" y="19.333333333333258" width="75" height="19.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6w3-BI-Gcf"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6w3-BI-Gcf" firstAttribute="trailing" secondItem="4hh-lh-45U" secondAttribute="trailing" constant="25" id="5yR-Mw-Alz"/>
+                            <constraint firstItem="7ss-s9-n3A" firstAttribute="top" secondItem="f5Y-XL-NZL" secondAttribute="bottom" constant="15" id="Cte-sU-Xxm"/>
+                            <constraint firstItem="6w3-BI-Gcf" firstAttribute="bottom" secondItem="4hh-lh-45U" secondAttribute="bottom" constant="15" id="GUZ-9y-0PY"/>
+                            <constraint firstItem="6w3-BI-Gcf" firstAttribute="trailing" secondItem="7ss-s9-n3A" secondAttribute="trailing" constant="25" id="Hoc-dB-ZME"/>
+                            <constraint firstItem="6w3-BI-Gcf" firstAttribute="trailing" secondItem="f5Y-XL-NZL" secondAttribute="trailing" id="MfT-X0-6Jz"/>
+                            <constraint firstItem="Uo5-g4-0By" firstAttribute="leading" secondItem="6w3-BI-Gcf" secondAttribute="leading" constant="25" id="QVU-Fh-MgL"/>
+                            <constraint firstItem="4hh-lh-45U" firstAttribute="leading" secondItem="6w3-BI-Gcf" secondAttribute="leading" constant="25" id="V6e-P2-DIR"/>
+                            <constraint firstItem="f5Y-XL-NZL" firstAttribute="leading" secondItem="6w3-BI-Gcf" secondAttribute="leading" id="W26-Iv-hMF"/>
+                            <constraint firstItem="f5Y-XL-NZL" firstAttribute="top" secondItem="Uo5-g4-0By" secondAttribute="bottom" constant="15" id="cAN-Nf-wyt"/>
+                            <constraint firstItem="6w3-BI-Gcf" firstAttribute="bottom" secondItem="f5Y-XL-NZL" secondAttribute="bottom" constant="200" id="dJY-Pq-Ttq"/>
+                            <constraint firstItem="Uo5-g4-0By" firstAttribute="top" secondItem="6w3-BI-Gcf" secondAttribute="top" constant="15" id="feh-Z7-NqM"/>
+                            <constraint firstItem="6w3-BI-Gcf" firstAttribute="trailing" secondItem="Uo5-g4-0By" secondAttribute="trailing" constant="25" id="lZh-GR-vXO"/>
+                            <constraint firstItem="7ss-s9-n3A" firstAttribute="leading" secondItem="6w3-BI-Gcf" secondAttribute="leading" constant="25" id="zeY-ZP-Lhg"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Scan" image="qrcode" catalog="system" id="96s-O6-WyG">
+                        <imageReference key="selectedImage" image="qrcode.viewfinder" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="categoriesDidChanged" destination="7ss-s9-n3A" id="DjT-uE-vs6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="isp-NU-HHT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2220" y="732.04225352112678"/>
+        </scene>
+        <!--Cart-->
+        <scene sceneID="CPC-Mh-qfh">
+            <objects>
+                <viewController id="swi-Fd-VNk" customClass="CartViewController" customModule="SkandiApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HGY-eH-t2p">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cart" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="da7-Uh-mSO">
+                                <rect key="frame" x="25" y="62" width="340" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="coI-jP-4G0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.3380523969" green="0.39523057900000003" blue="0.33458021539999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="highlightedColor" red="0.27843138579999999" green="0.32549020649999999" blue="0.27450981740000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tbW-T6-bny"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="da7-Uh-mSO" firstAttribute="leading" secondItem="tbW-T6-bny" secondAttribute="leading" constant="25" id="Gwg-LL-1fk"/>
+                            <constraint firstItem="da7-Uh-mSO" firstAttribute="top" secondItem="tbW-T6-bny" secondAttribute="top" constant="15" id="JjG-TK-EJC"/>
+                            <constraint firstItem="tbW-T6-bny" firstAttribute="trailing" secondItem="da7-Uh-mSO" secondAttribute="trailing" constant="25" id="yUy-eB-c8q"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cart" image="cart" catalog="system" id="KLx-V2-Rut">
+                        <imageReference key="selectedImage" image="cart.fill" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fhw-Mh-axR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2925" y="733"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="q9N-mI-awC">
+            <objects>
+                <viewController id="HU1-nP-rw0" customClass="ProfileViewController" customModule="SkandiApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BYj-ms-519">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzg-FD-8Vu">
+                                <rect key="frame" x="136.66666666666666" y="62" width="117" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.33725491169999999" green="0.40000003579999999" blue="0.33725491169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="personPhotoExample" translatesAutoresizingMaskIntoConstraints="NO" id="hJe-S5-DpL">
+                                <rect key="frame" x="145" y="117" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="IL8-eg-RA0"/>
+                                    <constraint firstAttribute="height" constant="100" id="TWO-g3-hg8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJX-I3-JZQ">
+                                <rect key="frame" x="113.66666666666669" y="242" width="163" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.33725491169999999" green="0.40000003579999999" blue="0.33725491169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="usernameEmail@gmail.com" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Urp-Og-ich">
+                                <rect key="frame" x="107.33333333333333" y="276" width="175.66666666666669" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <color key="textColor" red="0.3753448197" green="0.4388306421" blue="0.37148960269999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="highlightedColor" red="0.18274109420000001" green="0.27262863009999999" blue="0.05689536538" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UGb-UT-BdL"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jJX-I3-JZQ" firstAttribute="centerX" secondItem="BYj-ms-519" secondAttribute="centerX" id="5s7-sG-yYQ"/>
+                            <constraint firstItem="Urp-Og-ich" firstAttribute="top" secondItem="jJX-I3-JZQ" secondAttribute="bottom" constant="10" id="JiY-oK-4VT"/>
+                            <constraint firstItem="tzg-FD-8Vu" firstAttribute="top" secondItem="UGb-UT-BdL" secondAttribute="top" constant="15" id="O1R-W5-nyh"/>
+                            <constraint firstItem="tzg-FD-8Vu" firstAttribute="centerX" secondItem="BYj-ms-519" secondAttribute="centerX" id="SMz-dY-rbb"/>
+                            <constraint firstItem="jJX-I3-JZQ" firstAttribute="top" secondItem="hJe-S5-DpL" secondAttribute="bottom" constant="25" id="Vy9-3k-XQc"/>
+                            <constraint firstItem="hJe-S5-DpL" firstAttribute="centerX" secondItem="BYj-ms-519" secondAttribute="centerX" id="gAb-WM-80L"/>
+                            <constraint firstItem="Urp-Og-ich" firstAttribute="centerX" secondItem="BYj-ms-519" secondAttribute="centerX" id="qry-yo-gU0"/>
+                            <constraint firstItem="hJe-S5-DpL" firstAttribute="top" secondItem="tzg-FD-8Vu" secondAttribute="bottom" constant="25" id="r2i-yP-ofB"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="7VO-Y6-PzY">
+                        <imageReference key="selectedImage" image="person.fill" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="profilePhotoImageView" destination="hJe-S5-DpL" id="cXw-Wb-cKR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aaF-5V-WC3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3635" y="733"/>
+        </scene>
+        <!--Favorite-->
+        <scene sceneID="KbI-Uo-w7I">
+            <objects>
+                <viewController id="Tjg-KD-j5e" customClass="FavoriteViewController" customModule="SkandiApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yaM-N1-obQ">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorites" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZ2-KA-1q5">
+                                <rect key="frame" x="25" y="62" width="340" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FG2-YZ-1DF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.3380523969" green="0.39523057900000003" blue="0.33458021539999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="highlightedColor" red="0.27843138579999999" green="0.32549020649999999" blue="0.27450981740000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="76w-4v-gDR"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uZ2-KA-1q5" firstAttribute="leading" secondItem="76w-4v-gDR" secondAttribute="leading" constant="25" id="XJe-FT-xDU"/>
+                            <constraint firstItem="uZ2-KA-1q5" firstAttribute="top" secondItem="76w-4v-gDR" secondAttribute="top" constant="15" id="liq-km-wKU"/>
+                            <constraint firstItem="76w-4v-gDR" firstAttribute="trailing" secondItem="uZ2-KA-1q5" secondAttribute="trailing" constant="25" id="znH-p9-VvE"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favorite" image="heart" catalog="system" id="dK0-CL-nYd">
+                        <imageReference key="selectedImage" image="heart.fill" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CwD-bk-VhN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1514" y="733"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="sAs-id-jN7">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="XSM-Ue-TFp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hcW-3l-fIo">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.33725491169999999" green="0.40000003579999999" blue="0.33725491169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="trU-ct-TEm" kind="relationship" relationship="viewControllers" id="KGH-68-ewi"/>
+                        <segue destination="Tjg-KD-j5e" kind="relationship" relationship="viewControllers" id="HqJ-pc-9CO"/>
+                        <segue destination="VKg-TF-1Fl" kind="relationship" relationship="viewControllers" id="oal-6L-HPg"/>
+                        <segue destination="swi-Fd-VNk" kind="relationship" relationship="viewControllers" id="1HE-DL-SvR"/>
+                        <segue destination="HU1-nP-rw0" kind="relationship" relationship="viewControllers" id="S24-Og-Lnp"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ln-et-3kv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773.84615384615381" y="-2.1327014218009479"/>
         </scene>
     </scenes>
     <resources>
+        <image name="cart" catalog="system" width="128" height="102"/>
+        <image name="cart.fill" catalog="system" width="128" height="102"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="heart.fill" catalog="system" width="128" height="107"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="mainBackgroundImage" width="1279" height="1715"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="personPhotoExample" width="300" height="300"/>
+        <image name="qrcode" catalog="system" width="128" height="114"/>
+        <image name="qrcode.viewfinder" catalog="system" width="128" height="115"/>
+        <image name="roomExample" width="661" height="758"/>
+        <image name="skandiChair" width="80" height="80"/>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

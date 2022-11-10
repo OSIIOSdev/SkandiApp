@@ -15,7 +15,7 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        getStartedButtonPressed.layer.cornerRadius = getStartedButtonPressed.frame.height / 2
+        getStartedButtonPressed.layer.cornerRadius = 15
         
     }
 }
